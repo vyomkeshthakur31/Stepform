@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assest/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Step Form</title>
+</head>
+
+<body>
+  <h1 class="text-center text-white">STUDENT REGISTRATION FORM</h1>
+  
+
+  <div class="container">
+   <div class="step-row">
+      <div id="progress" class=""></div>
+      <div class="step-col">step 1</div>
+      <div class="step-col">step 2</div>
+      <div class="step-col">step 3</div>
+    </div>
+    
+    
+    <!-----------first step form-->
+    <form id="first">
+      <h3 class="mb-4 text-center">CREATE ACCOUNT</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-2 mb-3 ">
+          <i class="fas fa-5 fa-at "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="email" id="email" placeholder="Email">
+          <span id="valEmail" class="text-danger"></span>
+        </div>
+        <div class="col-md-2 mb-3">
+          <i class="fas fa-5 fa-lock "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="password" id="password" placeholder="Password">
+          <span id="valPass" class="text-danger"></span>
+        </div>
+        <div class="col-md-2 mb-3">
+          <i class="fas fa-5 fa-lock "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password">
+          <span id="valConPass" class="text-danger"></span>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <button type="button" id="Next1">Next</button>
+      </div>
+    </form>
+
+    <!------------second step form-->
+
+    <form id="second">
+      <h3 class="mb-4 text-center">USER INFO</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-2 mb-3 ">
+          <i class="fas fa-5 fa-user "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="text" id="username" placeholder="Username">
+          <span id="valUser" class="text-danger"></span>
+
+        </div>
+        <div class="col-md-2 mb-3">
+          <i class="fas fa-5 fa-id-card "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="text" id="fname" placeholder="First Name" required>
+          <span id="valFname" class="text-danger"></span>
+
+        </div>
+        <div class="col-md-2 mb-3">
+          <i class="fas fa-5 fa-id-card "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="text" id="lname" placeholder="Last Name" required>
+          <span id="valLname"></span>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <button type="button" id="Back1">Back</button>
+        <button type="button" id="Next2">Next</button>
+      </div>
+    </form>
+
+    <!-------third step form-->
+    <form id="third">
+      <h3 class="mb-4 text-center">Contact info</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-2 mb-3 ">
+          <i class="fas fa-5 fa-map-marked "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="text" id="district" placeholder="District">
+          <span id="valDistrict" class="text-danger"> </span>
+        </div>
+        <div class="col-md-2 mb-3">
+          <i class="fas fa-5 fa-map-marked "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="text" id="state" placeholder="State">
+          <span id="valState" class="text-danger"></span>
+        </div>
+        <div class="col-md-2 mb-3">
+          <i class="fas fa-5 fa-phone "></i>
+        </div>
+        <div class="col-md-10 mb-3">
+          <input type="text" id="phone" placeholder="Phone Number">
+          <span id="valPhone" class="text-danger"></span>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <button type="button" id="Back2"> Back</button>
+        <button type="button" id="Submit" data-toggle="modal" data-target="#exampleModal">Submit</button>
+      </div>
+
+      <!----modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" area-hidden="true">
+           
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel"> PREVIEW</h5>
+                  
+                 <button type="button" class="close" data-dismiss="modal" area-label="Close">
+                   <span area-hidden="true"> × </span>
+
+                 </button>
+             </div>
+             <div class="modal-body">
+               <h6 id="modal_body"></h6>
+          <button type="button" data-toggle="modal" data-target="#exampleModal" id="submit" >Submit
+
+               </button> 
+               
+             </div>
+            </div>
+          </div>
+
+
+        </div>
+     
+  </div>
+
+  </form>
+
+  
+
+  </div>
+
+  <footer class="page-footer font-small bg-dark">
+
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://www.instagram.com/vyomkesh_3180?r=nametag">Vyomkesh</a>
+    </div>
+
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js.js"></script>
+</body>
+
+</html>
